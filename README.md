@@ -143,7 +143,7 @@ In **vagrant** user,
 ```
 $ sudo passwd root
 ```
-I will set **root** password is **123**. ```$ su -```  to login with **root**
+I will set **root** password is 123, ```$ su -```  to login with **root**
 
 
 
