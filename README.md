@@ -49,10 +49,11 @@ I will start with creating 3 Ubuntu 18.04 servers. This will give you three serv
 | 2       | Worker1    | Worker| 172.16.10.101 |
 | 3       | Worker2    | Worker| 172.16.10.102 |
 
-Create a folder named <span style="color: pink"> kube-ubuntu </span> in your workspace
+Create a folder named **kube-ubuntu** in your workspace
 
 **Create Master Node**
 
+In folder **kube-ubuntu**. create subfolder named **master**. In folder **master**, create file Vagrantfile with the following content
 ```
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
