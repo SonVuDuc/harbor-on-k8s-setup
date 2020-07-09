@@ -147,5 +147,25 @@ I will set **root** password is 123.
 
 Run command ```$ su -```  to login with **root**
 
+On each of the 3 Ubuntu servers run the following commands as root:
+```
+$ apt-get update
+$ apt-get install curl
+$ apt-get install gnupg
+$ cat >>/etc/hosts<<EOF
+172.16.10.100 master
+172.16.10.101 worker1
+172.16.10.102 worker2
+EOF
+$ apt-get update && apt-get install -y apt-transport-https
+$ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+$ cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
+deb http://apt.kubernetes.io/ kubernetes-xenial main
+EOF
+$ apt-get update
+$ apt-get install -y kubelet kubeadm kubectl docker.io
+```
+
+
 
 
