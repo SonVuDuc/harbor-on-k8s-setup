@@ -23,6 +23,12 @@ Kubernetes is an open-source platform that manages Docker containers in the form
 
 I will start with creating 3 Ubuntu 18.04 servers. This will give you three servers to configure. To get this three member cluster up and running, you will need to use Vagrant to create Ubuntu 18.04 servers and enable Private Networking.
 
+| Server  | Hostname      | Role  |
+| ------- |:-------------:| -----:|
+| 1       | right-aligned | $1600 |
+| 2       | centered      |   $12 |
+| 3       | are neat      |    $1 |
+
 ```
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
