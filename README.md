@@ -138,7 +138,9 @@ Now you have 3 virtual machine Ubuntu server 18.04 LTS
 ## 4. Setup the Kubernetes Cluster
 
 SSH to your server with command ```$ vagrant ssh```, password: vagrant
+
 You need to have **root** permission in order to set up.
+
 In **vagrant** user, 
 ```
 $ sudo passwd root
@@ -165,7 +167,17 @@ EOF
 $ apt-get update
 $ apt-get install -y kubelet kubeadm kubectl docker.io
 ```
+I will use Addon plugin name calico. On the master node run the following command:
+```
+kubeadm init --apiserver-advertise-address=172.16.10.100 --pod-network-cidr=192.168.0.0/16
+```
+After that, run these command to start using your cluster:
 
+```
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+```
 
 
 
