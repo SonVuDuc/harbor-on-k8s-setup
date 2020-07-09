@@ -74,6 +74,11 @@ Vagrant.configure("2") do |config|
   end
 end
 ```
+To create Virtual Machine, run command:
+```
+$ vagrant up
+```
+
 After running the above command, you will have a fully running virtual machine in VirtualBox running Ubuntu 18.04 LTS 64-bit. Also you can SSH into this machine with ``` $ vagrant ssh```
 
 **Create Worker Node**
@@ -84,7 +89,8 @@ In each folder, open it in Termial and run command:
 $ vagrant init
 ```
 Edit the Vagrantfile with VS Code
-With node Woker1:
+
+Node Woker1:
 
 
 ```
@@ -104,7 +110,7 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-With node Worker2:
+Node Worker2:
 
 ```
 # -*- mode: ruby -*-
@@ -122,3 +128,9 @@ Vagrant.configure("2") do |config|
   end
 end
 ```
+
+After all, run command 
+```
+$ vagrant up
+```
+Now you have 3 virtual machine Ubuntu server 18.04 LTS 
