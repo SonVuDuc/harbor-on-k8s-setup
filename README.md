@@ -2,7 +2,7 @@
 ### Contents
 [1. Introduction]<br>
 [2. Prerequisites]<br>
-[3. Set up each server in the cluster.]<br>
+[3. Create Cluster.]<br>
 [4. Setup the Kubernetes Master]<br>
 [5. Join your nodes to your Kubernetes cluster]<br>
 
@@ -14,12 +14,27 @@ Kubernetes is a system designed to manage applications built within containers a
 Kubernetes is an open-source platform that manages Docker containers in the form of a cluster. Along with the automated deployment and scaling of containers, it provides healing by automatically restarting failed containers and rescheduling them when their hosts die. This capability improves the application’s availability.
 
 ## 2. Prerequisites
-+ Vagrant - a tool for building and managing virtual machine environments with an easy-to-use workflow and focus on automation
++ Virtual Box
++ Vagrant
++ Visual Studio Code
 + Ubuntu 18.04 servers 
 + Master node’s minimal required memory is 2GB
 + Worker node’s minimal required memory is 1GB
 
-## 3. Set up each server in the cluster
+## 3. Create Cluster
+
+**Install Virtual Box**
+```
+$ sudo apt update
+$ sudo apt install virtualbox
+```
+Launch Virtual Box
+
+```
+$ virtualbõ
+```
+
+**Install Vagrant**
 
 I will start with creating 3 Ubuntu 18.04 servers. This will give you three servers to configure. To get this three member cluster up and running, you will need to use Vagrant to create Ubuntu 18.04 servers and enable Private Networking.
 
@@ -28,6 +43,10 @@ I will start with creating 3 Ubuntu 18.04 servers. This will give you three serv
 | 1       | Master     | Master| 172.16.10.100 |
 | 2       | Worker1    | Worker| 172.16.10.101 |
 | 3       | Worker2    | Worker| 172.16.10.102 |
+
+Create a folder name
+
+**Create Master Node **
 
 ```
 # -*- mode: ruby -*-
