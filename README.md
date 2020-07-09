@@ -144,6 +144,7 @@ In **vagrant** user,
 $ sudo passwd root
 ```
 I will set **root** password is 123.
+
 Run command ```$ su -```  to login with **root**
 
 
