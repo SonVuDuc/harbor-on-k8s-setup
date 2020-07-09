@@ -1,10 +1,10 @@
-# Guide setup Kubernetes
+# Guide to setup Kubernetes
 ### Contents
-[1. Introduction]<br>
-[2. Prerequisites]<br>
-[3. Create Servers.]<br>
-[4. Setup the Kubernetes Cluster]<br>
-[5. Join your nodes to your Kubernetes cluster]<br>
+1. Introduction
+2. Prerequisites
+3. Create Servers
+4. Setup the Kubernetes Cluster
+5. Join your nodes to your Kubernetes cluster
 
 ## 1. Introduction
 Kubernetes is a system designed to manage applications built within containers across clustered environments. It handles the entire life cycle of a containerized application including deployment and scaling.
@@ -167,7 +167,7 @@ EOF
 $ apt-get update
 $ apt-get install -y kubelet kubeadm kubectl docker.io
 ```
-I will use Addon plugin name calico. On the master node run the following command:
+On the master node run the following command:
 ```
 kubeadm init --apiserver-advertise-address=172.16.10.100 --pod-network-cidr=192.168.0.0/16
 ```
@@ -178,6 +178,24 @@ mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
+
+I will use Addon plugin name calico, run this command to install:
+```
+kubectl apply -f https://docs.projectcalico.org/v3.10/manifests/calico.yaml
+```
+
+## 5. Join your nodes to your Kubernetes cluster
+You can now join any number of machines by running the kubeadm join command on each node as root. This command will be created for you as displayed in your terminal for you to copy and run. 
+
+Use this command:
+```
+kubeadm token create --print-join-command
+```
+
+An example of what this looks like is below:
+
+
+SSH to worker nodes as root and run join command to join worker nodes to cluster
 
 
 
