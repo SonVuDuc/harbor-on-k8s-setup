@@ -192,10 +192,14 @@ Use this command:
 kubeadm token create --print-join-command
 ```
 
+![Screenshot from 2020-07-09 16-42-26](https://user-images.githubusercontent.com/32956424/87024431-4ebe3480-c203-11ea-8a50-1483712808ec.png)
+
+
 An example of what this looks like is below:
 
 
 SSH to worker nodes as root and run join command to join worker nodes to cluster
+
 
 To check that all nodes are now joined to the master run the following command on the Kubernetes master node:
 ```
