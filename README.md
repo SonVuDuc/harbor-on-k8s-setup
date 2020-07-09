@@ -196,6 +196,11 @@ kubeadm token create --print-join-command
 
 
 An example of what this looks like is below:
+```
+This node has joined the cluster:
+* Certificate signing request was sent to master and a response was received.
+* The Kubelet was informed of the new secure connection details.
+```
 
 
 SSH to worker nodes as root and run join command to join worker nodes to cluster
