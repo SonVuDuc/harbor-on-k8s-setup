@@ -15,4 +15,6 @@ Kubernetes is an open-source platform that manages Docker containers in the form
 
 ## 2. Prerequisites
 + Vagrant 
-+ 3 Ubuntu 18.04 servers with 4GB RAM and private networking enabled
++ Ubuntu 18.04 servers 
++ Master node’s minimal required memory is 2GB
++ Worker node’s minimal required memory is 1GB
