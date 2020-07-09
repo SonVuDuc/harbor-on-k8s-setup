@@ -15,6 +15,7 @@ Kubernetes is an open-source platform that manages Docker containers in the form
 
 ## 2. Prerequisites
 + Virtual Box
++ Visual Studio Code
 + Vagrant
 + Visual Studio Code
 + Ubuntu 18.04 servers 
@@ -33,6 +34,8 @@ Launch Virtual Box
 ```
 $ virtualbox
 ```
+**Install Visual Studio Code**
+Go to link https://code.visualstudio.com/ and down .deb file and install
 
 **Install Vagrant**
 
@@ -137,7 +140,7 @@ Now you have 3 virtual machine Ubuntu server 18.04 LTS
 
 ## 4. Setup the Kubernetes Cluster
 
-SSH to your server with command ```$ vagrant ssh```, password: vagrant
+SSH to your server with command ```$ vagrant ssh```, password: **vagrant**
 
 You need to have **root** permission in order to set up.
 
