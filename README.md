@@ -75,3 +75,50 @@ Vagrant.configure("2") do |config|
 end
 ```
 After running the above command, you will have a fully running virtual machine in VirtualBox running Ubuntu 18.04 LTS 64-bit. Also you can SSH into this machine with ``` $ vagrant ssh```
+
+**Create Worker Node**
+
+Simillar to creating Master Node, in folder **kube-ubuntu**, you create 2 subfolders named **worker1** and **worker2**
+In each folder, open it in Termial and run command:
+```
+$ vagrant init
+```
+Edit the Vagrantfile with VS Code
+With node Woker1:
+
+
+```
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+Vagrant.configure("2") do |config|
+  config.vm.box = "aspyatkin/ubuntu-18.04-server"
+  config.vm.network "private_network", ip: "172.16.10.101"
+  config.vm.hostname = "worker1"
+
+  config.vm.provider "virtualbox" do |vb|
+     vb.name = "worke1r"
+     vb.cpus = 1
+     vb.memory = "1024"
+ 
+  end
+end
+```
+
+With node Worker2:
+
+```
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+Vagrant.configure("2") do |config|
+  config.vm.box = "aspyatkin/ubuntu-18.04-server"
+  config.vm.network "private_network", ip: "172.16.10.102"
+  config.vm.hostname = "worker2"
+
+  config.vm.provider "virtualbox" do |vb|
+     vb.name = "worker2"
+     vb.cpus = 1
+     vb.memory = "1024"
+ 
+  end
+end
+```
