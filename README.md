@@ -14,10 +14,9 @@ Kubernetes is a system designed to manage applications built within containers a
 Kubernetes is an open-source platform that manages Docker containers in the form of a cluster. Along with the automated deployment and scaling of containers, it provides healing by automatically restarting failed containers and rescheduling them when their hosts die. This capability improves the application’s availability.
 
 ## 2. Prerequisites
-+ Virtual Box
-+ Visual Studio Code
-+ Vagrant
-+ Visual Studio Code
++ Virtual Box(https://www.virtualbox.org/)
++ Visual Studio Code(https://code.visualstudio.com/)
++ Vagrant(https://www.vagrantup.com/)
 + Ubuntu 18.04 servers 
 + Master node’s minimal required memory is 2GB
 + Worker node’s minimal required memory is 1GB
@@ -35,7 +34,8 @@ Launch Virtual Box
 $ virtualbox
 ```
 **Install Visual Studio Code**
-Go to link https://code.visualstudio.com/ and down .deb file and install
+
+Go to link https://code.visualstudio.com/ and download .deb file and install
 
 **Install Vagrant**
 
