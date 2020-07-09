@@ -2,8 +2,8 @@
 ### Contents
 [1. Introduction]<br>
 [2. Prerequisites]<br>
-[3. Create Cluster.]<br>
-[4. Setup the Kubernetes Master]<br>
+[3. Create Servers.]<br>
+[4. Setup the Kubernetes Cluster]<br>
 [5. Join your nodes to your Kubernetes cluster]<br>
 
 ## 1. Introduction
@@ -21,7 +21,7 @@ Kubernetes is an open-source platform that manages Docker containers in the form
 + Master node’s minimal required memory is 2GB
 + Worker node’s minimal required memory is 1GB
 
-## 3. Create Cluster
+## 3. Create Servers
 
 **Install Virtual Box**
 ```
@@ -102,7 +102,7 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "worker1"
 
   config.vm.provider "virtualbox" do |vb|
-     vb.name = "worke1r"
+     vb.name = "worker1"
      vb.cpus = 1
      vb.memory = "1024"
  
@@ -134,3 +134,16 @@ After all, run command
 $ vagrant up
 ```
 Now you have 3 virtual machine Ubuntu server 18.04 LTS 
+
+## 4. Setup the Kubernetes Cluster
+
+SSH to your server with command ```$ vagrant ssh```, password: vagrant
+You need to have **root** permission in order to set up.
+In **vagrant** user, 
+```
+$ sudo passwd root
+```
+I will set **root** password is **123**. ```$ su -```  to login with **root**
+
+
+
