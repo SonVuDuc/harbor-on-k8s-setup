@@ -31,10 +31,16 @@ $ sudo apt install virtualbox
 Launch Virtual Box
 
 ```
-$ virtualbõ
+$ virtualbox
 ```
 
 **Install Vagrant**
+
+```
+$ sudo apt-get install vagrant
+
+```
+
 
 I will start with creating 3 Ubuntu 18.04 servers. This will give you three servers to configure. To get this three member cluster up and running, you will need to use Vagrant to create Ubuntu 18.04 servers and enable Private Networking.
 
