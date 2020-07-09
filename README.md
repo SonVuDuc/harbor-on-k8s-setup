@@ -53,7 +53,13 @@ Create a folder named **kube-ubuntu** in your workspace
 
 **Create Master Node**
 
-In folder **kube-ubuntu**. create subfolder named **master**. In folder **master**, create file Vagrantfile with the following content
+In folder **kube-ubuntu**. create subfolder named **master**. In folder **master**, open in Terminal, run command
+```
+$ vagrant init
+```
+Vagrant will generates Vagrantfile. Open file in VS Code and edit like this
+
+
 ```
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
