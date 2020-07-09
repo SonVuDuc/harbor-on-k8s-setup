@@ -57,8 +57,7 @@ In folder **kube-ubuntu**. create subfolder named **master**. In folder **master
 ```
 $ vagrant init
 ```
-Vagrant will generates Vagrantfile. Open file in VS Code and edit like this
-
+Vagrant will generates Vagrantfile. Open file in VS Code and edit like this:
 
 ```
 # -*- mode: ruby -*-
@@ -74,5 +73,5 @@ Vagrant.configure("2") do |config|
      vb.memory = "2048"
   end
 end
-
 ```
+After running the above command, you will have a fully running virtual machine in VirtualBox running Ubuntu 18.04 LTS 64-bit. Also you can SSH into this machine with ``` $ vagrant ssh```
