@@ -197,5 +197,8 @@ An example of what this looks like is below:
 
 SSH to worker nodes as root and run join command to join worker nodes to cluster
 
+![Screenshot from 2020-07-09 16-38-41](https://user-images.githubusercontent.com/32956424/87024123-e8d1ad00-c202-11ea-8d64-83e9025d0a56.png)
+
+
 
 
