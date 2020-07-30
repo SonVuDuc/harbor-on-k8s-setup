@@ -5,6 +5,8 @@
 3. Create Servers
 4. Setup the Kubernetes Cluster
 5. Join your nodes to your Kubernetes cluster
+6. Using Rancher to manage Kubernetes cluster
+7. Installing Harbor
 
 ## 1. Introduction
 [Kubernetes](https://kubernetes.io/) is a system designed to manage applications built within containers across clustered environments. It handles the entire life cycle of a containerized application including deployment and scaling.
@@ -215,6 +217,12 @@ $ kubectl get nodes
 ```
 
 ![Screenshot from 2020-07-09 16-38-41](https://user-images.githubusercontent.com/32956424/87024123-e8d1ad00-c202-11ea-8d64-83e9025d0a56.png)
+
+## 6. Using Rancher to manage Kubernetes cluster
+
+![Screenshot from 2020-07-30 11-24-57](https://user-images.githubusercontent.com/32956424/88880808-ebe71880-d257-11ea-9835-581605469e17.png)
+
+
 
 
 
