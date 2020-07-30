@@ -222,7 +222,7 @@ $ kubectl get nodes
 
 Rancher is a complete software stack for teams adopting containers. It addresses the operational and security challenges of managing multiple Kubernetes clusters across any infrastructure, while providing DevOps teams with integrated tools for running containerized workloads.
 
-In this part, I will install Rancher and use it to manage Kubernetes cluster
+In this part, I will install Rancher and use it to manage Kubernetes cluster with 3 Node that have been installed Docker
 
 
 | Server  | Hostname   | Role  |IP Address     |
@@ -230,6 +230,20 @@ In this part, I will install Rancher and use it to manage Kubernetes cluster
 | 1       | Rancher    |Server |192.168.1.15 |
 | 2       | Master     |Master | 192.168.1.201 |
 | 3       | Worker1    |Worker | 192.168.1.202 |
+
+
+SSH to node Rancher and run this command to install Rancher:
+
+```
+$ docker run -d --restart=unless-stopped \
+    -p 80:80 -p 443:443 \
+    -v /opt/rancher:/var/lib/rancher \
+    rancher/rancher:latest
+```
+
+When it done, you can access to Rancher web UI from web browser
+
+![Screenshot from 2020-07-30 11-39-55](https://user-images.githubusercontent.com/32956424/88881360-6d8b7600-d259-11ea-8e8a-9fcca717518a.png)
 
 
 ![Screenshot from 2020-07-30 11-24-57](https://user-images.githubusercontent.com/32956424/88880808-ebe71880-d257-11ea-9835-581605469e17.png)
