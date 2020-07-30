@@ -227,7 +227,7 @@ In this part, I will install Rancher and use it to manage Kubernetes cluster
 
 | Server  | Hostname   | Role  |IP Address     |
 | ------- |:----------:|:-----:|--------------:|
-| 1       | Rancher    |Server | 192.168.1.15  |
+| 1       | Rancher    |Server | 192.168.1.15 |
 | 2       | Master     |Master | 192.168.1.201 |
 | 3       | Worker1    |Worker | 192.168.1.202 |
 
