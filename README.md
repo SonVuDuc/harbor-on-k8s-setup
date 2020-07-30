@@ -220,6 +220,8 @@ $ kubectl get nodes
 
 ## 6. Using Rancher to manage Kubernetes cluster
 
+Rancher is a complete software stack for teams adopting containers. It addresses the operational and security challenges of managing multiple Kubernetes clusters across any infrastructure,
+
 ![Screenshot from 2020-07-30 11-24-57](https://user-images.githubusercontent.com/32956424/88880808-ebe71880-d257-11ea-9835-581605469e17.png)
 
 
