@@ -245,7 +245,7 @@ When it done, you can access to Rancher web UI from web browser. System will ask
 
 ![Screenshot from 2020-07-30 11-39-55](https://user-images.githubusercontent.com/32956424/88881360-6d8b7600-d259-11ea-8e8a-9fcca717518a.png)
 
-Login with username: 'admin' and password you have already set
+Login with username: **admin** and password you have already set
 In this page, you can create a new cluster or import existed cluster. I will create a new one and set name for it
 
 
@@ -255,10 +255,48 @@ In this page, you can create a new cluster or import existed cluster. I will cre
 ![Screenshot from 2020-08-01 15-41-47](https://user-images.githubusercontent.com/32956424/89097914-876dba00-d40d-11ea-87bd-4de6a6540c0d.png)
 
 
-In this case, you can custom roles for every nodes you add to cluster. Just tick in role, copy command and run in Node you want
+In this case, you can custom roles for every nodes you add to cluster. Tick in role, copy command and run in Node you want
 
 
 ![Screenshot from 2020-08-01 15-42-47](https://user-images.githubusercontent.com/32956424/89097946-a9ffd300-d40d-11ea-96d8-cc65f5782441.png)
+
+
+Waiting for it
+
+
+![Screenshot from 2020-07-30 10-08-38](https://user-images.githubusercontent.com/32956424/89098072-8e48fc80-d40e-11ea-9c0e-daa7fbc6d414.png)
+
+Now, you can run app on Rancher. Click on **Global -> 'Your Cluster' -> Default**
+
+![Screenshot from 2020-07-30 10-08-48](https://user-images.githubusercontent.com/32956424/89098101-c0f2f500-d40e-11ea-9459-59c633100c54.png)
+
+Click on **App -> Launch**. Choose app Harbor
+
+![Screenshot from 2020-07-30 10-09-11](https://user-images.githubusercontent.com/32956424/89098131-f992ce80-d40e-11ea-90b1-943f03e6ac05.png)
+
+Enter your admin password, click Launch and wait. I will use xip.io to generate link
+
+![Screenshot from 2020-07-30 11-12-44](https://user-images.githubusercontent.com/32956424/89098142-08798100-d40f-11ea-8f18-cd6444901e28.png)
+
+![Screenshot from 2020-07-30 11-23-58](https://user-images.githubusercontent.com/32956424/89098163-38c11f80-d40f-11ea-92ca-d65a780e7eb2.png)
+
+![Screenshot from 2020-07-30 11-24-03](https://user-images.githubusercontent.com/32956424/89098176-52626700-d40f-11ea-918c-8a79851554ba.png)
+ 
+When it's done, you can access to Harbor through xip.io link 
+
+![Screenshot from 2020-07-30 10-34-18](https://user-images.githubusercontent.com/32956424/89098179-58584800-d40f-11ea-88ce-71c3707407e4.png)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
