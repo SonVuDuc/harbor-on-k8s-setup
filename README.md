@@ -220,12 +220,14 @@ $ kubectl get nodes
 
 Rancher is a complete software stack for teams adopting containers. It addresses the operational and security challenges of managing multiple Kubernetes clusters across any infrastructure, while providing DevOps teams with integrated tools for running containerized workloads.
 
-In this part, I will install Rancher and use it to manage Kubernetes cluster with 3 Node that have been installed Docker
+In this part, I will install Rancher, use it to manage Kubernetes cluster and launch app.
+I will use Brigde Apdater instead of Host only Adapter 
+
 
 
 | Server  | Hostname   | Role  |IP Address     |
 | ------- |:----------:|:-----:|--------------:|
-| 1       | Rancher    |Server |192.168.1.15 |
+| 1       | Rancher    |Server | 192.168.1.15  |
 | 2       | Master     |Master | 192.168.1.201 |
 | 3       | Worker1    |Worker | 192.168.1.202 |
 
@@ -239,12 +241,21 @@ $ docker run -d --restart=unless-stopped \
     rancher/rancher:latest
 ```
 
-When it done, you can access to Rancher web UI from web browser
+When it done, you can access to Rancher web UI from web browser. System will ask you set password for it. 
 
 ![Screenshot from 2020-07-30 11-39-55](https://user-images.githubusercontent.com/32956424/88881360-6d8b7600-d259-11ea-8e8a-9fcca717518a.png)
 
+Login with username: 'admin' and password you have already set
+In this page, you can create a new cluster or import existed cluster. I will create a new one and set name for it
+![Screenshot from 2020-08-01 15-41-47](https://user-images.githubusercontent.com/32956424/89097914-876dba00-d40d-11ea-87bd-4de6a6540c0d.png)
+
+In this case, you can custom roles for every nodes you add to cluster. Just tick in role, copy command and run in Node you want
+
+![Screenshot from 2020-08-01 15-42-47](https://user-images.githubusercontent.com/32956424/89097946-a9ffd300-d40d-11ea-96d8-cc65f5782441.png)
+
 
 ![Screenshot from 2020-07-30 11-24-57](https://user-images.githubusercontent.com/32956424/88880808-ebe71880-d257-11ea-9835-581605469e17.png)
+
 
 
 
