@@ -1,50 +1,21 @@
-# Guide to setup Kubernetes
-### Contents
-1. Introduction
-2. Prerequisites
-3. Create Servers
-4. Setup the Kubernetes Cluster
-5. Join your nodes to your Kubernetes cluster
+# Hướng dẫn cài đặt Harbor trên Rancher
+### Nội dung
+1. Yêu cầu 
+2. Cài đặt Rancher
+3. Tạo cluster k8s
+4. Cài đặt Harbor
 
-## 1. Introduction
-[Kubernetes](https://kubernetes.io/) is a system designed to manage applications built within containers across clustered environments. It handles the entire life cycle of a containerized application including deployment and scaling.
+## 1. Yêu cầu 
 
-![alt text](https://techvccloud.mediacdn.vn/zoom/650_406/2018/10/15/kubernetes-15395717142261348450270-0-57-799-1479-crop-1539571719483162513005.png)
+Danh sách server:
+  + 1 Node Rancher
+  + 1 Node Master
+  + 1 Node Worker
 
-Kubernetes is an open-source platform that manages Docker containers in the form of a cluster. Along with the automated deployment and scaling of containers, it provides healing by automatically restarting failed containers and rescheduling them when their hosts die. This capability improves the application’s availability.
-
-## 2. Prerequisites
-+ [Virtual Box](https://www.virtualbox.org/)
-+ [Visual Studio Code](https://code.visualstudio.com/)
-+ [Vagrant](https://www.vagrantup.com/)
-+ Ubuntu 18.04 servers 
-+ Master node’s minimal required memory is 2GB
-+ Worker node’s minimal required memory is 1GB
-
-## 3. Create Servers
-
-**Install Virtual Box**
-```
-$ sudo apt update
-$ sudo apt install virtualbox
-```
-Launch Virtual Box
-
-```
-$ virtualbox
-```
-**Install Visual Studio Code**
-
-Go to link https://code.visualstudio.com/ and download .deb file and install
-
-**Install Vagrant**
-
-```
-$ sudo apt-get install vagrant
-```
-
-
-I will start with creating 3 Ubuntu 18.04 servers. This will give you three servers to configure. To get this three member cluster up and running, you will need to use Vagrant to create Ubuntu 18.04 servers and enable Private Networking.
+Cần 3 VPS hoặc VM
+  + HĐH: Ubuntu server 18.04
+  + Docker
+  
 
 | Server  | Hostname   |  Role |IP Address     |
 | ------- |:----------:|:-----:|--------------:|
