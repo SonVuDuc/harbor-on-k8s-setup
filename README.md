@@ -17,12 +17,11 @@ Cần 3 VPS hoặc VM
   + Mỗi node đều được cài đặt Docker
   
 
-| Server  | Hostname   |  Role  |IP Address      |
-| ------- |:----------:|:-----: |---------------:|
-| 1       | Rancher    | Rancher| 192.168.41.1   |
-| 2       | Master     | Master | 192.168.41.128 |
-| 3       | Worker1    | Worker | 192.168.41.130 |
-
+| Server  | Hostname   |  Role  |IP Address     |
+| ------- |:----------:|:-----: |--------------:|
+| 1       | Rancher    | Rancher| 192.168.41.1  |
+| 2       | Master     | Master | 192.168.41.128|
+| 3       | Worker1    | Worker | 192.168.41.130|
 
 
 ## 2. Cài đặt Rancher
