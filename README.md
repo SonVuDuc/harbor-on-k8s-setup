@@ -14,18 +14,18 @@ Danh sách server:
 
 Cần 3 VPS hoặc VM
   + HĐH: Ubuntu server 18.04
-  + Docker
+  + Mỗi node đều được cài đặt Docker
   
 
-| Server  | Hostname   |  Role |IP Address     |
-| ------- |:----------:|:-----:|--------------:|
-| 1       | Master     | Master| 172.16.10.100 |
-| 2       | Worker1    | Worker| 172.16.10.101 |
-| 3       | Worker2    | Worker| 172.16.10.102 |
+| Server  | Hostname   |  Role  |IP Address     |
+| ------- |:----------:|:-----: |--------------:|
+| 1       | Rancher    | Rancher| 172.16.10.100 |
+| 2       | Master     | Master | 172.16.10.101 |
+| 3       | Worker1    | Worker | 172.16.10.102 |
 
-Create a folder named **kube-ubuntu** in your workspace
 
-**Create Master Node**
+
+## 2. Cài đặt Rancher
 
 In folder **kube-ubuntu**. create subfolder named **master**. In folder **master**, open in Terminal, run command
 ```
