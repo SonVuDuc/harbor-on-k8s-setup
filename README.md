@@ -49,12 +49,12 @@ Chọn **Add Cluster**, click **From Existing Node**
 
 Đặt tên cho Cluster vào click **Next**
 
-Tùy chọn role cho từng node muốn thêm vào cluster bằng cách tick vào ô tương ứng
+Tùy chọn role cho từng node muốn thêm vào cluster bằng cách tick vào ô tương ứng.
 
 ![Screenshot from 2020-08-06 00-11-06](https://user-images.githubusercontent.com/32956424/89442625-5547b980-d779-11ea-81f8-87955cb3bce8.png)
 
-Với node Master, chọn **etcd** và **Control Plane**. Copy command, SSH đến node Master và chạy lệnh
-Với node Worker, chọn **Worker**. Copy command, SSH đến node Worker và chạy lệnh
+Với node Master, chọn **etcd** và **Control Plane**. Copy command, SSH đến node Master và chạy lệnh.
+Với node Worker, chọn **Worker**. Copy command, SSH đến node Worker và chạy lệnh.
 
 
 ```
