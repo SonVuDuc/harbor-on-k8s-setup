@@ -76,6 +76,23 @@ Tùy chỉnh password cho admin Harbor và chọn **Launch**
 
 ![Screenshot from 2020-08-06 00-38-44](https://user-images.githubusercontent.com/32956424/89445360-3f3bf800-d77d-11ea-9229-12bf5b774875.png)
 
+Đợi đến khi quá trình cài đặt hoàn tất
+
+![Screenshot from 2020-08-06 00-46-24](https://user-images.githubusercontent.com/32956424/89446102-4ca5b200-d77e-11ea-92a5-387253eb18d2.png)
+
+Truy cập vào Harbor thông qua Harbor Portal
+
+![Screenshot from 2020-08-06 00-48-17](https://user-images.githubusercontent.com/32956424/89446306-8e365d00-d77e-11ea-8ee8-5d40409cecfb.png)
+
+![Screenshot from 2020-08-06 00-49-11](https://user-images.githubusercontent.com/32956424/89446396-ad34ef00-d77e-11ea-9881-a8b828c3fa12.png)
+
+
+Đăng nhập bằng admin username và password đã set trước đó.
+
+![Screenshot from 2020-08-06 00-49-55](https://user-images.githubusercontent.com/32956424/89446464-c2aa1900-d77e-11ea-85d5-817b321e82b3.png)
+
+
+
 
 
 
