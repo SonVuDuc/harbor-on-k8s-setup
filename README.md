@@ -26,11 +26,36 @@ Cần 3 VPS hoặc VM
 
 ## 2. Cài đặt Rancher
 
-In folder **kube-ubuntu**. create subfolder named **master**. In folder **master**, open in Terminal, run command
+SSH đến node Rancher và chạy lệnh sau
 ```
-$ vagrant init
+docker run -d --restart=unless-stopped \
+    -p 80:80 -p 443:443 \
+    -v /opt/rancher:/var/lib/rancher \
+    rancher/rancher:latest
 ```
-Vagrant will generates Vagrantfile. Open file in VS Code and edit like this:
+Khi quá trình cài đặt hoàn tất, truy cập vào Rancher thông qua địa chỉ https://192.168.41.1
+Hệ thống sẽ yêu cầu set password cho tài khoản admin. Điền password và đăng nhập vào Rancher
+
+![Screenshot from 2020-08-06 00-01-15](https://user-images.githubusercontent.com/32956424/89441881-0cdbcc00-d778-11ea-9389-f41fff8a59f2.png)
+
+Sau khi đăng nhập vào Rancher sẽ có giao diện như sau
+
+![Screenshot from 2020-08-06 00-07-30](https://user-images.githubusercontent.com/32956424/89442316-d81c4480-d778-11ea-816e-1fdf4c56518a.png)
+
+## 3. Tạo cluster k8s
+
+Chọn **Add Cluster**, click **From Existing Node**
+![Screenshot from 2020-08-06 00-08-20](https://user-images.githubusercontent.com/32956424/89442420-0568f280-d779-11ea-8eca-3b0df99e58a1.png)
+
+Đặt tên cho Cluster vào click **Next**
+
+Tùy chọn role cho từng node muốn thêm vào cluster bằng cách tick vào ô tương ứng
+
+![Screenshot from 2020-08-06 00-11-06](https://user-images.githubusercontent.com/32956424/89442625-5547b980-d779-11ea-81f8-87955cb3bce8.png)
+
+Với node Master, chọn **etcd** và **Control Plane**. Copy command, SSH đến node Master và chạy lệnh
+Với node Worker, chọn **Worker**. Copy command, SSH đến node Worker và chạy lệnh
+
 
 ```
 # -*- mode: ruby -*-
