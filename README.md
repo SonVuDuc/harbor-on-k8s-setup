@@ -1,4 +1,4 @@
-# Hướng dẫn cài đặt Harbor trên Rancher
+## Hướng dẫn cài đặt Harbor trên Rancher
 ### Nội dung
 1. Yêu cầu 
 2. Cài đặt Rancher
