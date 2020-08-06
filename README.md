@@ -47,7 +47,7 @@ Sau khi đăng nhập vào Rancher sẽ có giao diện như sau
 Chọn **Add Cluster**, click **From Existing Node**
 ![Screenshot from 2020-08-06 00-08-20](https://user-images.githubusercontent.com/32956424/89442420-0568f280-d779-11ea-8eca-3b0df99e58a1.png)
 
-Đặt tên cho Cluster vào click **Next**
+Đặt tên cho Cluster và click **Next**
 
 Tùy chọn role cho từng node muốn thêm vào cluster bằng cách tick vào ô tương ứng.
 
